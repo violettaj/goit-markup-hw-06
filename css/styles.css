@@ -59,18 +59,11 @@ text-decoration: none;
 line-height: 1.1;
 color:#212121;
 letter-spacing: 0.02em;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.link:hover {
-    color: #2196F3; 
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:focus {
-    color: #2196F3; 
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+.link:hover, .link:focus {
+    color: #2196F3;  
 }
 
 .header-mail, .header-tel {
@@ -80,24 +73,23 @@ font-size: 14px;
 text-decoration: none;
 line-height: 1.1;
 letter-spacing: 0.02em;
+
 }
 
 .contact-icons:hover {
     color: #2196F3;
     fill: #2196F3;
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-icons:focus {
     color: #2196F3;
     fill: #2196F3;
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .contact-icons {
 fill:#757575;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 
@@ -123,27 +115,16 @@ color:#FFFFFF;
 border:none;
 border-radius: 4px;
 border:none;
-
+box-shadow: none;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .main-button:hover {
-    color: #FFFFFF;
-    background-color: #2196F3;
-    border-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-border-radius: 4px;
 }
 
 .main-button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
-    border-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .headline> .container {
@@ -327,20 +308,17 @@ width: 44px;
           justify-content: center;
           fill: #AFB1B8;
           cursor:pointer;
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .media-icons:hover {
     fill: #fff;
     background-color: #2196F3;  
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-icons:focus {
     fill: #fff;
-    background-color: #2196F3;   
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #2196F3; 
 }
 
 .clients {
@@ -358,19 +336,16 @@ width:170px;
           justify-content: center;
           fill: #afb1b8;
           cursor:pointer;
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .clients-icons:hover {
    fill:#2196F3;
    border-color:#2196F3;
-   transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icons:focus {
     fill:#2196F3;
     border-color:#2196F3;
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .images-item {
@@ -399,22 +374,18 @@ margin:0;
 
 .first-button:hover, .second-button:hover, .third-button:hover, .fourth-button:hover, .fifth-button:hover {
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border-color: #2196F3;
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-button:focus, .second-button:focus, .third-button:focus, .fourth-button:focus, .fifth-button:focus {
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border-color: #2196F3;
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-button {
@@ -427,6 +398,9 @@ margin:0;
     cursor: pointer;
     border:none;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     
 }
 
@@ -440,6 +414,9 @@ margin:0;
     cursor: pointer;
     border:none;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .third-button {
@@ -452,6 +429,9 @@ margin:0;
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .fourth-button {
@@ -464,6 +444,9 @@ margin:0;
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .fifth-button {
@@ -476,6 +459,9 @@ margin:0;
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .project-name {
@@ -503,8 +489,9 @@ margin:0;
 .project-cards:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 cursor:pointer;
-transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-cards {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .project-images {
     object-fit: cover;
@@ -601,18 +588,15 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms ;
     font-style: normal;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .footer-mail:hover, .footer-tel:hover {
     color: #2196F3;
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:focus, .footer-tel:focus {
     color: #2196F3;
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -669,20 +653,17 @@ width: 44px;
           justify-content: center;
           fill: #fff;
           cursor:pointer;
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .footer-media-icons:hover {
     fill: #fff;
     background-color: #2196F3; 
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .footer-media-icons:focus {
     fill: #fff;
     background-color: #2196F3;   
-    transition-delay: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
