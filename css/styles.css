@@ -610,6 +610,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-right: 70px;
 }
 
 .footer-contact {
@@ -634,12 +635,12 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 gap:20px;
+margin-right: 78px;
 }
 
 .footer-block {
     display: flex;
     flex-direction: row;
-    gap:70px;
     justify-content: flex-start;
 }
 
@@ -665,6 +666,80 @@ width: 44px;
     fill: #fff;
     background-color: #2196F3;   
 }
+
+.newsletter-btn {
+    width: 200px;
+height: 50px;
+background-color: #2196F3;
+color:#fff;
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+display: flex;
+align-items: center;
+gap:24px;
+text-align: center;
+
+letter-spacing: 0.06em;
+border:none;
+justify-content:center;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
+}
+
+
+
+.newsletter-btn:hover, .newsletter-btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.newsletter-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.newsletter-input::placeholder {
+    font-size: 16px;
+line-height: 1.25px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+padding-left: 16px;
+}
+
+
+
+
+.newsletter-label {
+display: flex;
+flex-direction: column;
+gap:20px;
+padding-top:72px;
+}
+
+
+.newsletter {
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+gap:12px;
+}
+
+.newsletter-input {
+    width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color:inherit;
+font-size: 16px;
+line-height: 1.25px;
+letter-spacing: 0.03em;
+color:#FFFFFF;
+}
+
 
 
 .backdrop {
@@ -695,8 +770,7 @@ justify-content: flex-end;
 top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%);
-  padding-top: 8px;
-  padding-right: 8px;
+  
 }
 
 .close-btn {
@@ -711,4 +785,120 @@ justify-content: center;
 align-items: center;
 cursor:pointer;
 
+
+}
+
+.modal-form {
+    position: absolute ;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    left:40px;
+    top:40px;
+}
+
+#form-head {
+    font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+margin-bottom:12px;
+}
+.form-part {
+    display:flex;
+    flex-direction:column;
+margin-bottom:10px;
+gap:4px;
+
+}
+.form-icons>input {
+    width: 448px;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+
+}
+.form-icons {
+ position:relative;
+}
+.form-icons>svg {
+    position: absolute;
+}
+.person {
+    top:14px;
+    left:15px;
+}
+.tel {
+    top:13.26px;
+    left:14.27px;
+}
+
+.envelope {
+    top:14px;
+    left:13.5px;
+}
+
+.input-title {
+    font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.01em;
+color: #757575;
+
+}
+
+.form-btn {
+    width: 200px;
+height: 50px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border:none;
+margin-left:124px;
+margin-top:30px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+margin-bottom:40px;
+cursor:pointer;
+}
+
+.form-part > textarea {
+    width: 448px;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+margin-top:4px;
+}
+
+.checkbox {
+    font-size: 14px;
+line-height: 1.7px;
+letter-spacing: 0.03em;
+color: #757575;
+display: flex;
+align-items: center;
+gap:8px;
+margin-left: 15px;
+margin-top:25px;
+
+}
+.checkbox >a {
+    font-size: 14px;
+    line-height: 1.7px;
+    letter-spacing: 0.03em; 
+}
+
+.checkbox-icon {
+    appearance: none;
+    outline:none;
+}
+
+.checkbox-style > svg {
+    background-color: #2196F3;
 }

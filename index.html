@@ -367,12 +367,11 @@
   </li>
   </ul>
 </div>
-<div class="newsletter">
-  <form>
-<label>
-  Zapisz się do newslettera
-  <input type="email" name="email"/>
-  
+<div class="newsletter-block">
+  <form class="newsletter">
+<label class="newsletter-label">
+ <p class="newsletter-title">Zapisz się do newslettera</p>
+  <input class="newsletter-input" type="email" name="email" placeholder="E-mail"/>
 </label>
 <button type="submit" class="newsletter-btn">Zapisz się<svg width="24px" height="24px"><use href="./images/icons.svg#icon-icon-send"></use></svg></button>
   </form>
@@ -381,6 +380,52 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="modal-form">
+          <div role="form-group" arial-labelby="form-head"></div>
+          <p id="form-head">Zostaw swoje dane w formularzu poniżej</p>
+          <label class="form-part">
+            <p class="input-title">Imię</p>
+            <div class="form-icons">
+            <input type="text" name="username"/>
+            <svg class="person" width="12px" height="12px">
+              <use href="./images/icons.svg#icon-modal-person"></use>
+            </svg>
+            </div>
+          </label>
+          <label class="form-part">
+            <p class="input-title">Telefon</p>
+            <div class="form-icons">
+            <input type="tel" name="phone_number"/>
+            <svg class="tel" width="13px" height="13px">
+              <use href="./images/icons.svg#icon-modal-tel"></use>
+            </svg>
+          </div>
+          </label>
+          <label class="form-part">
+            <p class="input-title">E-mail</p>
+            <div class="form-icons">
+            <input type="email" name="email"/>
+            <svg class="envelope"width="15px" height="12px">
+              <use href="./images/icons.svg#icon-modal-envelope"></use>
+            </svg>
+            </div>
+          </label >
+          <label class="form-part">
+            <p class="input-title">Komentarz</p>
+            <textarea name="feedback" ></textarea>
+          </label>
+          <label class="checkbox">
+            <div class="checkbox-style">
+            <input class="checkbox-icon" type="checkbox" value="Accept the regulations and privacy policy"/>
+            <svg width="16px" height="15px">
+              <use href="./images/icons.svg#icon-checkbox-active"></use>
+            </svg>
+          </div>
+            Oświadczam iż akceptuję<a href="">Regulamin</a>i<a href="">Politykę Prywatności.</a>
+          </label>
+          <button class="form-btn">Wyślij</button>
+        </div>
+        </form>   
 <button type="button" class="close-btn" data-modal-close>
   <svg width="11" height="11"
   xmlns="http://www.w3.org/2000/svg"  
