@@ -380,6 +380,13 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="11" height="11"
+          xmlns="http://www.w3.org/2000/svg"  
+          viewBox="0 0 32 32">
+          <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
+        </svg>
+        </button>
         <form class="modal-form">
           <div role="form-group" arial-labelby="form-head"></div>
           <p id="form-head">Zostaw swoje dane w formularzu poniżej</p>
@@ -412,27 +419,20 @@
           </label >
           <label class="form-part">
             <p class="input-title">Komentarz</p>
-            <textarea name="feedback" ></textarea>
+            <textarea name="feedback" placeholder="Wprowadź tekst" ></textarea>
           </label>
           <label class="checkbox">
             <div class="checkbox-style">
             <input class="checkbox-icon" type="checkbox" value="Accept the regulations and privacy policy"/>
-            <svg width="16px" height="15px">
+            <svg class="checkbox-active" width="16px" height="15px">
               <use href="./images/icons.svg#icon-checkbox-active"></use>
             </svg>
           </div>
-            Oświadczam iż akceptuję<a href="">Regulamin</a>i<a href="">Politykę Prywatności.</a>
+            Oświadczam iż akceptuję<a href="" class="policy">Regulamin</a>i<a href="" class="policy">Politykę Prywatności.</a>
           </label>
           <button class="form-btn">Wyślij</button>
         </div>
         </form>   
-<button type="button" class="close-btn" data-modal-close>
-  <svg width="11" height="11"
-  xmlns="http://www.w3.org/2000/svg"  
-  viewBox="0 0 32 32">
-  <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
-</svg>
-</button>
       </div>
     </div> 
     <script src="./js/modal.js"></script>
