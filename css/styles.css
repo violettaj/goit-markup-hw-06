@@ -823,10 +823,13 @@ height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 
+
 }
 .form-icons {
  position:relative;
+ 
 }
+
 .form-icons>svg {
     position: absolute;
 }
@@ -913,16 +916,16 @@ margin-top:25px;
     position: absolute;
     bottom:-2px;
     right:-2px;
-    
-    
-    
 }
+
 
 .checkbox-style {
     border: 2px solid rgba(33, 33, 33, 1);
     width:16px;
     height:15px;
     position: relative;
+    visibility:none;
+    opacity:0;
 }
 
 .form-icons:focus-within {
@@ -936,7 +939,7 @@ textarea::placeholder {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     padding-top:12px;
-    padding-right: 16px;
+    padding-left: 16px;
     
     
 }
