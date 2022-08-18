@@ -370,7 +370,7 @@
 <div class="newsletter-block">
   <form class="newsletter">
 <label class="newsletter-label">
- <p class="newsletter-title">Zapisz się do newslettera</p>
+ <span class="newsletter-title">Zapisz się do newslettera</span>
   <input class="newsletter-input" type="email" name="email" placeholder="E-mail"/>
 </label>
 <button type="submit" class="newsletter-btn">Zapisz się<svg width="24px" height="24px"><use href="./images/icons.svg#icon-icon-send"></use></svg></button>
@@ -387,47 +387,45 @@
           <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
         </svg>
         </button>
-        <form class="modal-form">
-          <div role="form-group" arial-labelby="form-head"></div>
+        <form class="modal-sheet">
+          <div role="group" aria-labelledby="form-head">
           <p id="form-head">Zostaw swoje dane w formularzu poniżej</p>
           <label class="form-part">
-            <p class="input-title">Imię</p>
-            <div class="form-icons">
+            <span class="input-title">Imię</span>
+            <span class="form-icons">
             <input type="text" name="username"/>
             <svg class="person" width="12px" height="12px">
               <use href="./images/icons.svg#icon-modal-person"></use>
             </svg>
-            </div>
+          </span>
           </label>
           <label class="form-part">
-            <p class="input-title">Telefon</p>
-            <div class="form-icons">
+            <span class="input-title">Telefon</span>
+            <span class="form-icons">
             <input type="tel" name="phone_number"/>
             <svg class="tel" width="13px" height="13px">
               <use href="./images/icons.svg#icon-modal-tel"></use>
             </svg>
-          </div>
+          </span>
           </label>
           <label class="form-part">
-            <p class="input-title">E-mail</p>
-            <div class="form-icons">
+            <span class="input-title">E-mail</span>
+            <span class="form-icons">
             <input type="email" name="email"/>
-            <svg class="envelope"width="15px" height="12px">
+            <svg class="envelope" width="15px" height="12px">
               <use href="./images/icons.svg#icon-modal-envelope"></use>
             </svg>
-            </div>
+            </span>
           </label >
           <label class="form-part">
-            <p class="input-title">Komentarz</p>
+            <span class="input-title">Komentarz</span>
             <textarea name="feedback" placeholder="Wprowadź tekst" ></textarea>
           </label>
           <label class="checkbox">
-            <div class="checkbox-style">
-            <input class="checkbox-icon" type="checkbox" value="Accept the regulations and privacy policy"/>
-            <svg class="checkbox-active" width="16px" height="15px">
+            <input type="checkbox" value="Accept the regulations and privacy policy"/>
+            <svg width="16px" height="15px">
               <use href="./images/icons.svg#icon-checkbox-active"></use>
             </svg>
-          </div>
             Oświadczam iż akceptuję<a href="" class="policy">Regulamin</a>i<a href="" class="policy">Politykę Prywatności.</a>
           </label>
           <button class="form-btn">Wyślij</button>
